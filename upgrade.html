@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade Your Account - Study Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Upgrade Your Study Planner Account</h1>
+        <div class="upgrade-options">
+            <div class="upgrade-card">
+                <h2>Pro Plan</h2>
+                <p class="price">$4.99/month</p>
+                <ul class="features">
+                    <li>Access to all pro features</li>
+                    <li>Unlimited flashcards</li>
+                    <li>Advanced study analytics</li>
+                    <li>Study groups</li>
+                    <li>Resource library</li>
+                    <li>Progress tracking</li>
+                    <li>Quiz feature</li>
+                    <li>Ad-free experience</li>
+                </ul>
+                <button id="upgrade-pro" class="upgrade-button">Choose Pro</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('upgrade-pro').addEventListener('click', () => upgradeAccount('pro'));
+
+        async function upgradeAccount(plan) {
+            try {
+                const response = await fetch('/upgrade_account', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ plan: plan }),
+                });
+                const data = await response.json();
+                if (response.ok) {
+                    alert(`Account upgraded to ${plan} successfully!`);
+                    window.location.href = '/';  // Redirect to main page after upgrade
+                } else {
+                    alert('Error upgrading account: ' + data.error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while upgrading the account.');
+            }
+        }
+    </script>
+</body>
+</html>

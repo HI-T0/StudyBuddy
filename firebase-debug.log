@@ -1,0 +1,82 @@
+[debug] [2024-11-05T14:38:22.647Z] ----------------------------------------------------------------------
+[debug] [2024-11-05T14:38:22.652Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hemer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-11-05T14:38:22.652Z] CLI Version:   13.23.1
+[debug] [2024-11-05T14:38:22.652Z] Platform:      win32
+[debug] [2024-11-05T14:38:22.652Z] Node Version:  v22.11.0
+[debug] [2024-11-05T14:38:22.653Z] Time:          Tue Nov 05 2024 17:38:22 GMT+0300 (East Africa Time)
+[debug] [2024-11-05T14:38:22.653Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-05T14:38:22.658Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-05T14:38:22.819Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-05T14:38:22.820Z] > authorizing via signed-in user (mayaimaniwahito@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Hemer\Desktop\StudyBuddy2
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2024-11-05T14:38:23.399Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-11-05T14:38:23.399Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-11-05T14:38:45.036Z] Using project from CLI flag: studybuddy-8d13b
+[debug] [2024-11-05T14:38:45.037Z] Checked if tokens are valid: false, expires at: 1730724312833
+[debug] [2024-11-05T14:38:45.038Z] Checked if tokens are valid: false, expires at: 1730724312833
+[debug] [2024-11-05T14:38:45.038Z] > refreshing access token with scopes: []
+[debug] [2024-11-05T14:38:45.041Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-05T14:38:45.041Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-05T14:38:45.451Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-11-05T14:38:45.451Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-05T14:38:45.691Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studybuddy-8d13b [none]
+[debug] [2024-11-05T14:38:46.241Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studybuddy-8d13b 200
+[debug] [2024-11-05T14:38:46.241Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studybuddy-8d13b {"projectId":"studybuddy-8d13b","projectNumber":"854371329529","displayName":"StudyBuddy","name":"projects/studybuddy-8d13b","resources":{"hostingSite":"studybuddy-8d13b"},"state":"ACTIVE","etag":"1_18926137-55b1-47d5-9fe1-f0f73270c055"}
+[info] i  Using project studybuddy-8d13b (StudyBuddy) 
+[info] 
+=== Hosting Setup
+[debug] [2024-11-05T14:38:46.262Z] Checked if tokens are valid: true, expires at: 1730821124451
+[debug] [2024-11-05T14:38:46.262Z] Checked if tokens are valid: true, expires at: 1730821124451
+[debug] [2024-11-05T14:38:46.262Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studybuddy-8d13b [none]
+[debug] [2024-11-05T14:38:46.578Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studybuddy-8d13b 200
+[debug] [2024-11-05T14:38:46.579Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studybuddy-8d13b {"projectId":"studybuddy-8d13b","projectNumber":"854371329529","displayName":"StudyBuddy","name":"projects/studybuddy-8d13b","resources":{"hostingSite":"studybuddy-8d13b"},"state":"ACTIVE","etag":"1_18926137-55b1-47d5-9fe1-f0f73270c055"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote frontend/templates/404.html 
+[debug] [2024-11-05T15:04:36.616Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-11-05T15:04:36.984Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-11-05T15:04:36.985Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.0.1","browserURL":"https://www.gstatic.com/firebasejs/11.0.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.0.1/firebase.tgz"},"live":{"version":"11.0","browserURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.0.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.0.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.0.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.0.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.0.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.0.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.0.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.0.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.0.1/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.0.1/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of frontend/templates/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Hemer\Desktop\StudyBuddy2 is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=138489346&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-11-05T15:32:21.238Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-11-05T15:32:21.238Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-11-05T15:32:21.775Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-11-05T15:32:21.775Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-11-05T15:32:21.782Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-11-05T15:32:22.330Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-11-05T15:32:22.330Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"HI-T0","id":164635024,"node_id":"U_kgDOCdAhkA","avatar_url":"https://avatars.githubusercontent.com/u/164635024?v=4","gravatar_id":"","url":"https://api.github.com/users/HI-T0","html_url":"https://github.com/HI-T0","followers_url":"https://api.github.com/users/HI-T0/followers","following_url":"https://api.github.com/users/HI-T0/following{/other_user}","gists_url":"https://api.github.com/users/HI-T0/gists{/gist_id}","starred_url":"https://api.github.com/users/HI-T0/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/HI-T0/subscriptions","organizations_url":"https://api.github.com/users/HI-T0/orgs","repos_url":"https://api.github.com/users/HI-T0/repos","events_url":"https://api.github.com/users/HI-T0/events{/privacy}","received_events_url":"https://api.github.com/users/HI-T0/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":5,"public_gists":0,"followers":0,"following":0,"created_at":"2024-03-23T12:14:41Z","updated_at":"2024-10-12T18:03:15Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":110,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as HI-T0 
+[info] 

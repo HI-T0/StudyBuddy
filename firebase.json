@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "frontend/templates",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/static/**",
+        "destination": "/frontend/static"
+      }
+    ]
+  }
+}
